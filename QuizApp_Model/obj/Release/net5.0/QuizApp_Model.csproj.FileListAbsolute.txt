@@ -1,0 +1,12 @@
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\bin\Release\net5.0\QuizApp_Model.deps.json
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\bin\Release\net5.0\QuizApp_Model.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\bin\Release\net5.0\ref\QuizApp_Model.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\bin\Release\net5.0\QuizApp_Model.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.csproj.AssemblyReference.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.AssemblyInfoInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.AssemblyInfo.cs
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.csproj.CoreCompileInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\ref\QuizApp_Model.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Model\obj\Release\net5.0\QuizApp_Model.pdb

@@ -1,0 +1,48 @@
+﻿@model QuizApp_Model.ViewModels.ManageAnswerVM
+@{
+    ViewData["Title"] = "Create Answers";
+    int answerNumbers = ViewBag.answerNumbers;
+}
+
+<div class="row">
+    <div class="card col-md-12 my-3">
+        <div class="card-body">
+            
+            <h4>Create Answers</h4>
+            <hr />
+            <form asp-action="store-answers" method="post">
+                <input type="hidden" asp-for="@Model.Question.Id" />
+                <div class="row">
+                    @for(int i = 0; i < answerNumbers; i++)
+                    {
+                        <div class="col-md-4">
+                            <input type="hidden" asp-for="@Model.Answers[i].QuestionId" value="@Model.Question.Id" />
+                            <div class="card my-5">
+                                <div class="card-body">
+                                    <h5>Answer Number: @(i+1)</h5>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label asp-for="@Model.Answers[i].Name"></label>
+                                        <input class="form-control" asp-for="@Model.Answers[i].Name">
+                                        <span asp-validation-for="@Model.Answers[i].Name"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="@Model.Answers[i].IsCorrect">
+                                            <input asp-for="@Model.Answers[i].IsCorrect" />
+                                            Is Correct
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+              <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

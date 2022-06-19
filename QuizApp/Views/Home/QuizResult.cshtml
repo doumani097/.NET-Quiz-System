@@ -1,0 +1,17 @@
+﻿@model QuizApp_Model.ViewModels.QuizResultVM
+@{
+    var exam_result = Model.quizVM.Exam.Questions.Sum(q => q.Mark);
+}
+<div class="card">
+    <div class="card-body text-center">
+        <h3>Exam Result : @exam_result Marks</h3>
+        <h3>Exam Pass : @(exam_result / 2) Marks</h3>
+        <h3>Total Result : @Model.FinalResult / @exam_result</h3>
+        @if(Model.FinalResult < exam_result)
+        {
+            <h5 class="text-danger">failed ):, you need to re-take this exam again</h5>
+        }else{
+            <h5 class="text-success">success ):, you complete the exam successfully.</h5>
+        }
+    </div>
+</div>

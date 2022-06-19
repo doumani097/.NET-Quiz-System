@@ -1,0 +1,48 @@
+﻿@using QuizApp_Utility
+@model IEnumerable<QuizApp_Model.Exam>
+@{
+    ViewData["Title"] = "Exams";
+}
+
+@if(Model.Count() > 0)
+{
+    <div class="py-3">
+        <div class="card mb-5">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-8">
+                            <p class="mt-1">Add New Exams</p>
+                        </div>
+                        <div class="col-auto">
+                            <input type="number" class="form-control" placeholder="Number Of Exams" name="no"/>
+                        </div>
+                        <div class="col-auto">
+                            <button formaction="/Manage/create-exams" formmethod="get" type="submit" class="btn btn-success">Create</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach(var exam in Model){
+                <div class="col-md-3">
+                    <div class="card" style="height:420px !important">
+                        <img src="@WC.ImageExamPath@exam.Image" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@exam.Name <small class="float-right text-muted">@exam.Questions.Count() Questions</small></h5>
+                            <p class="card-text">@exam.ShortDescription</p>
+                            <div>
+                                <p class="text-muted">@Html.Raw(@exam.Created_at.ToShortDateString()) <span class="float-right">@exam.Questions.Sum(q => q.Mark)Marks</span></p>
+                                <a class="btn btn-primary" asp-action="edit-exam" asp-route-id="@exam.Id">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}else{
+    <h4 class="text-center py-5">There is No Exams Yet, You Can Add The <a asp-action="create-exams" asp-route-no="1">First one</a></h4>
+}

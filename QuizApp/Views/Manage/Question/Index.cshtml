@@ -1,0 +1,49 @@
+﻿@model QuizApp_Model.Exam
+@{
+    ViewData["Title"] = "Questions";
+}
+
+@if(Model.Questions.Count() > 0)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-8">
+                        <p class="mt-1">Add New Questions</p>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" class="form-control" placeholder="Number Of Questions" name="no"/>
+                    </div>
+                    <div class="col-auto">
+                        <button formaction="/Manage/create-questions/@Model.Id" formmethod="get" type="submit" class="btn btn-success">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">                
+                <li class="list-group-item active">
+                    @Model.Name Questions <span class="float-right">@Model.Questions.Sum(q => q.Mark) Marks</span>
+                </li>
+                @foreach(var question in Model.Questions)
+                {
+                    <a class="list-group-item list-group-item-action" asp-action="edit-question" asp-route-id="@question.Id">
+                        @question.Number-) @question.Name
+                        <small class="float-right text-muted">@question.Mark Marks</small>
+                    </a>
+                }
+            </ul>
+        </div>
+    </div>
+}
+else{
+    <h4 class="text-center py-5">There is No Questions for This Exam Yet, You Can Add The 
+        <a asp-action="create-questions" asp-route-id="@Model.Id" asp-route-no="1">
+            First one
+        </a>
+    </h4>
+}

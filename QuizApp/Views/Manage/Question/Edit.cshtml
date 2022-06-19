@@ -1,0 +1,85 @@
+﻿@model QuizApp_Model.Question
+@{
+    ViewData["Title"] = "Edit Question";
+}
+
+<div class="row my-3">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="pb-3">Edit Question in @Model.Exam.Name Exam</h4>
+                <form asp-action="update-question" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="ExamId" />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="Number"></label>
+                            <input class="form-control" asp-for="Number">
+                            <span asp-validation-for="Number"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="Mark"></label>
+                            <input class="form-control" asp-for="Mark">
+                            <span asp-validation-for="Mark"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input class="form-control" asp-for="Name">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                    <button type="submit" class="btn btn-danger" formaction="/Manage/delete-question" formmethod="post">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <form>    
+                    <div class="form-row">
+                        <div class=col-md-3>
+                            <p class="mt-2">No Answers</p>
+                        </div>                       
+                        <div class=col-auto>
+                            <input class="form-control" type="number" name="no" />
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-success" formaction="/Manage/create-answers/@Model.Id">Add</button>
+                        </div>
+                    </div>
+                </form>
+                <hr />
+                @if(Model.Answers.Count() > 0)
+                {
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            Question Answers
+                        </li>
+                        @foreach (var answer in Model.Answers)
+                       {
+                        <a class="list-group-item list-group-item-action" asp-action="edit-answer" asp-route-id="@answer.Id">
+                            @answer.Name 
+                            @if (answer.IsCorrect)
+                            {
+                                <span class="float-right badge badge-success">Correct</span>
+                            }
+                            else
+                            {
+                                <span class="float-right badge badge-danger">Wrong</span>
+                            }
+                        </a>                       
+                       }
+                    </ul>   
+                }else{
+                    <p>There is No Answers For this Question Yet, You Can Add The <a asp-action="create-answers" asp-route-id="@Model.Id" asp-route-no="1">First one</a></p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

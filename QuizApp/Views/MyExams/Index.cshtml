@@ -1,0 +1,19 @@
+﻿@model IEnumerable<QuizApp_Model.UserExams>
+@{
+    ViewData["title"] = "My Exams";
+}
+
+<div class="row">
+    @foreach(var exam in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2>@exam.Exam.Name</h2>
+                    <p>@exam.Exam.ShortDescription</p>
+                    <a class="btn btn-info" asp-controller="MyExams" asp-action="ExamDetails" asp-route-id="@exam.Id" asp-route-eid="@exam.ExamId">Show Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

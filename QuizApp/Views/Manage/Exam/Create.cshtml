@@ -1,0 +1,53 @@
+﻿@model IList<QuizApp_Model.Exam>
+@{
+    ViewData["Title"] = "Create Exams";
+    int no_of_exams = ViewBag.no_of_exams;
+}
+
+<div class="row">
+    <div class="card col-md-8 offset-md-2 my-3">
+        <div class="card-body">
+            <h4>Create Exam</h4>
+            <hr />
+            <form asp-action="store-exams" method="post" enctype="multipart/form-data">
+            @for(int i = 0; i< no_of_exams; i++)
+            {       
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="mb-3">Exam @(i+1)</h4>
+                        <div class="form-group">
+                            <label asp-for="@Model[i].Name"></label>
+                            <input class="form-control" asp-for="@Model[i].Name">
+                            <span asp-validation-for="@Model[i].Name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model[i].ShortDescription"></label>
+                            <input class="form-control" asp-for="@Model[i].ShortDescription">
+                            <span asp-validation-for="@Model[i].ShortDescription"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model[i].Description"></label>
+                            <textarea class="form-control" asp-for="@Model[i].Description"></textarea>
+                            <span asp-validation-for="@Model[i].Description"></span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" name="files@(i)" class="custom-file-input" id="file@(i)">
+                                <label class="custom-file-label" for="file@(i)">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

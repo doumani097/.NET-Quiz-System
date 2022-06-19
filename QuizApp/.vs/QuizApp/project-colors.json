@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ea1dcd10-0f36-41d4-8428-a91daada64be": {
+      "ProjectGuid": "ea1dcd10-0f36-41d4-8428-a91daada64be",
+      "DisplayName": "QuizApp",
+      "ColorIndex": 0
+    },
+    "571b3a73-8014-4377-8be0-f26817ec5295": {
+      "ProjectGuid": "571b3a73-8014-4377-8be0-f26817ec5295",
+      "DisplayName": "QuizApp_Data",
+      "ColorIndex": 1
+    },
+    "70851f21-ea9f-424b-b31e-23e69c78daa9": {
+      "ProjectGuid": "70851f21-ea9f-424b-b31e-23e69c78daa9",
+      "DisplayName": "QuizApp_Model",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ceb6861a-d6fa-4586-b4bf-73c90dd067ce": {
+      "ProjectGuid": "ceb6861a-d6fa-4586-b4bf-73c90dd067ce",
+      "DisplayName": "QuizApp_Utility",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

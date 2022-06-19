@@ -1,0 +1,36 @@
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.deps.json
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.runtimeconfig.json
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.runtimeconfig.dev.json
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.dll
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\ref\QuizApp_Data.dll
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.pdb
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Model.dll
+D:\Projects\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Model.pdb
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.AssemblyReference.cache
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.AssemblyInfoInputs.cache
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.AssemblyInfo.cs
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.CoreCompileInputs.cache
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.CopyComplete
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.dll
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\ref\QuizApp_Data.dll
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.pdb
+D:\Projects\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.genruntimeconfig.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.deps.json
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.runtimeconfig.json
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.runtimeconfig.dev.json
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\ref\QuizApp_Data.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Data.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Model.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\bin\Debug\net5.0\QuizApp_Model.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.AssemblyReference.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.AssemblyInfoInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.AssemblyInfo.cs
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.CoreCompileInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.csproj.CopyComplete
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\ref\QuizApp_Data.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Data\obj\Debug\net5.0\QuizApp_Data.genruntimeconfig.cache

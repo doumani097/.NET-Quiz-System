@@ -1,0 +1,57 @@
+﻿@model QuizApp_Model.ViewModels.ManageQuestionVM
+@{
+    ViewData["Title"] = "Create Questions";
+    int no_of_questions = ViewBag.no_of_questions;
+}
+
+<div class="row">
+    <div class="card col-md-8 offset-md-2 my-3">
+        <div class="card-body">
+            
+            <h4>Create Questions in @Model.Exam.Name Exam</h4>
+            <hr />
+            <form asp-action="store-questions" method="post">
+                
+                <input type="hidden" asp-for="@Model.Exam.Id" value="@Model.Exam.Id" />
+                <input type="hidden" asp-for="@Model.Exam.Name" value="@Model.Exam.Name" />
+                <input type="hidden" asp-for="@Model.Exam.Description" value="@Model.Exam.Description" />
+                <input type="hidden" asp-for="@Model.Exam.ShortDescription" value="@Model.Exam.ShortDescription" />
+                <input type="hidden" asp-for="@Model.Exam.Created_at" value="@Model.Exam.Created_at" />
+
+                @for(int i = 0; i < no_of_questions; i++)
+                {
+                <input type="hidden" asp-for="@Model.Questions[i].ExamId" value="@Model.Exam.Id" />
+                <div class="card my-5">
+                    <div class="card-body">
+                        <h5>Question Number: @(i+1)</h5>
+                        <hr>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label asp-for="@Model.Questions[i].Number"></label>
+                                <input class="form-control" asp-for="@Model.Questions[i].Number">
+                                <span asp-validation-for="@Model.Questions[i].Number"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="@Model.Questions[i].Mark"></label>
+                                <input class="form-control" asp-for="@Model.Questions[i].Mark">
+                                <span asp-validation-for="@Model.Questions[i].Mark"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.Questions[i].Name"></label>
+                            <input class="form-control" asp-for="@Model.Questions[i].Name">
+                            <span asp-validation-for="@Model.Questions[i].Name"></span>
+                        </div>
+                    </div>
+                </div>
+                }
+
+              <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

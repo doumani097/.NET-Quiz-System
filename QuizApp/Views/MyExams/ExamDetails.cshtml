@@ -1,0 +1,41 @@
+﻿@model QuizApp_Model.ViewModels.MyExamDetailsVM
+
+<h2 class="text-center">@Model.Exam.Name Exam Review</h2>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        @foreach(var question in Model.Exam.Questions){
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4>@question.Name</h4>
+                @foreach(var answer in question.Answers)
+                {
+                    @foreach(var uanswer in Model.UserAnswers)
+                    {
+                        @if(question.Id == uanswer.Answer.QuestionId)
+                        {
+                            @if(uanswer.Answer.Id == answer.Id)
+                            {
+                                @if (answer.IsCorrect)
+                                {
+                                    <p class="text-success font-weight-bold">Your Answer : @answer.Name (Correct)</p>          
+                                }else{
+                                    <p class="text-danger font-weight-bold">Your Answer : @answer.Name (InCorrect)</p>
+                                }                                    
+                            }
+                        }
+                    }
+                }
+                @foreach(var answer in question.Answers)
+                {
+                    @if (answer.IsCorrect)
+                    {
+                        <p class="text-success font-weight-bold">@answer.Name</p>          
+                    }else{
+                        <p class="text-danger font-weight-bold">@answer.Name</p>
+                    }
+                }
+            </div>
+        </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,24 @@
+D:\Projects\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.deps.json
+D:\Projects\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.dll
+D:\Projects\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\ref\QuizApp_Utility.dll
+D:\Projects\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.pdb
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.csproj.AssemblyReference.cache
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.AssemblyInfoInputs.cache
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.AssemblyInfo.cs
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.csproj.CoreCompileInputs.cache
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.dll
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\ref\QuizApp_Utility.dll
+D:\Projects\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.deps.json
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\ref\QuizApp_Utility.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\bin\Debug\net5.0\QuizApp_Utility.pdb
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.csproj.AssemblyReference.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.AssemblyInfoInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.AssemblyInfo.cs
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.csproj.CoreCompileInputs.cache
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\ref\QuizApp_Utility.dll
+D:\Projects\Asp.net core\Quiz Project\QuizApp_Utility\obj\Debug\net5.0\QuizApp_Utility.pdb

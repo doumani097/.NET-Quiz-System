@@ -1,0 +1,34 @@
+﻿@model QuizApp_Model.Answer
+@{
+    ViewData["Title"] = "Edit Answer";
+}
+
+<div class="row my-3">
+    <div class="card col-md-12">
+        <div class="card-body">
+            <h4>Answer Details</h4>
+            <hr />
+            <form asp-action="update-answer" method="post">
+              <input type="hidden" asp-for="Id" />
+              <input type="hidden" asp-for="QuestionId" />
+              <div class="form-group">
+                <label asp-for="Name"></label>
+                <input class="form-control" asp-for="Name">
+                <span asp-validation-for="Name"></span>
+              </div>
+              <div class="form-group">
+                <label asp-for="IsCorrect">
+                    <input asp-for="IsCorrect" />
+                    Is Correct
+                </label>
+                </div>
+              <button type="submit" class="btn btn-primary">Edit</button>
+              <button type="submit" formaction="/Manage/delete-answer/" formmethod="post" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
